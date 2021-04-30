@@ -1,0 +1,245 @@
+
+
+.container {
+    width: 100%;
+}
+
+.background {
+    position: relative;
+    width: 1545px;
+    height: 911px;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+}
+
+.tab-content{
+    position: absolute;
+}
+
+.navbar{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aNav{
+    display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.aNav:hover {
+    background-color: white;
+    color: red;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.title {
+    margin: 0px;
+    padding: 20px 0px 20px 0px;
+    width: 1545px;
+    text-align: center;
+    background-color: aqua;
+}
+
+.btn-common {
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    background-color: yellow;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: 800;
+}
+
+.btn-common:hover {
+    background-color: rgb(196, 196, 9);
+
+    cursor: pointer;
+}
+
+#san-rung-btn {
+    position: absolute;
+    left: 350px;
+    top: 20px;
+}
+
+#buong-say-btn {
+    position: absolute;
+    left: 550px;
+    top: 20px;
+}
+
+#may-can-cat-btn {
+    position: absolute;
+    left: 450px;
+    top: 520px;
+}
+
+#may-can-keo-btn {
+    position: absolute;
+    left: 650px;
+    top: 610px;
+}
+
+#may-can-ep1-btn {
+    position: absolute;
+    left: 870px;
+    top: 610px;
+}
+
+#may-can-ep2-btn {
+    position: absolute;
+    left: 1100px;
+    top: 610px;
+}
+
+#may-can-ep3-btn {
+    position: absolute;
+    left: 1180px;
+    top: 350px;
+}
+
+#may-can-ep4-btn {
+    position: absolute;
+    left: 1000px;
+    top: 350px;
+}
+
+#may-can-ep5-btn {
+    position: absolute;
+    left: 820px;
+    top: 350px;
+}
+
+#may-can-ep6-btn {
+    position: absolute;
+    left: 650px;
+    top: 350px;
+}
+
+#may-ep-banh-btn {
+    position: absolute;
+    left: 1050px;
+    top: 50px;
+}
+
+#may-can-banh-btn {
+    position: absolute;
+    left: 800px;
+    top: 50px;
+}
+
+#he-thong-tron-btn {
+    position: absolute;
+    left: 200px;
+    top: 610px;
+}
+
+#nuong-danh-dong-btn {
+    position: absolute;
+    left: 450px;
+    top: 610px;
+}
+
+#bom-com-btn {
+    position: absolute;
+    left: 50px;
+    top: 480px;
+}
+
+#bang-tai-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 40px;
+}
+
+#bom-nuoc-rua-mu-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 100px;
+} 
+.btn-common1 {
+    color: rgb(243, 21, 21);
+    text-decoration: none;
+    padding: 20px;
+    background-color: rgb(0, 255, 13);
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: 1000;
+}  
+.btn-common1:hover {
+    background-color: rgba(186, 191, 243, 0.432);
+    cursor: pointer;
+}
+#he-thong-dieu-khien-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}   
+.btn-den {
+
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+#den-buong-say-btn {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+#den-san-rung-btn {
+    position: absolute;
+    left: 150px;
+    top: 150px;
+}
+
+#den-may-can-cat-btn {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+
+#den-may-can-keo {
+    position: absolute;
+    left: 250;
+    top: 250px;
+}
+
+#den-buong-say-btn {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+#den-san-rung-btn {
+    position: absolute;
+    left: 150;
+    top: 150px;
+}
+.testcode{
+    position: absolute;
+    left: 200px;
+    top: 100px; 
+    width: 50px;
+}
+.active{
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    background-color: white;
+    border-radius: 7px;
+}
+.active a {
+    color: red;
+    text-decoration: none;
+}
