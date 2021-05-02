@@ -10,125 +10,370 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style1.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
     <script src="javascripts.js"></script>
+    <script src="jquery-2.0.2.min.js"></script>
     <title>Home </title>
 </head>
 
 <body>
 
-        <ul class="navbar" >
-            <li class="listTab active"><a class="aNav" data-toggle="tab" href="#home">Home</a></li>
-            <li class="listTab"><a class="aNav" data-toggle="tab" href="#menu1">BƠM CỐM 1</a></li>
-            <li class="listTab"><a class="aNav" data-toggle="tab" href="#menu1">BƠM 2</a></li>
-            <li class="listTab"><a class="aNav" data-toggle="tab" href="#menu1">BƠM 3</a></li>
-            <li class="listTab"><a class="aNav" data-toggle="tab" href="#menu1">BƠM 4</a></li>
-            <li class="listTab"><a class="aNav" data-toggle="tab" href="#menu1">BƠM 5</a></li>
-            <li class="listTab"><a class="aNav" data-toggle="tab" href="#menu1">BƠM 6</a></li>
-        </ul>
-    
-        
-        <!-- Tab content -->
-        <div class="tab-content">
-            <div id="home" class="tab-pane fade in active">
-             
-                <div class="container">
-                    <h1 class="title">
-                        HỆ THỐNG ĐIỀU KHIỂN VÀ GIÁM SÁT DÂY CHUYỀN SẢN XUẤT MỦ CAO SU
-                    </h1>
-                    <div class="background">
-                        <button  onclick="Test()" >abc</button>
-                        <a id="san-rung-btn" class="btn-common">SÀN RUNG</a>
-                        <a id="buong-say-btn" class="btn-common"> BUỒNG SẤY </a>
-                        <!-- <a id="bom-com-btn" class="btn-common"> BƠM CỐM </a> -->
-                    
-                        <button class="testcode" onclick="BOMCOM()">BƠM CỐM </button> 
-                        <a id="may-can-cat-btn" class="btn-common"> MÁY CÁN CẮT </a>
-                        <a id="may-can-keo-btn" class="btn-common"> MÁY CÁN KÉO </a>
-                        <a id="may-can-ep1-btn" class="btn-common"> MÁY CÁN ÉP 1 </a>
-                        <a id="may-can-ep2-btn" class="btn-common"> MÁY CÁN ÉP 2 </a>
-                        <a id="may-can-ep3-btn" class="btn-common"> MÁY CÁN ÉP 3 </a>
-                        <a id="may-can-ep4-btn" class="btn-common"> MÁY CÁN ÉP 4 </a>
-                        <a id="may-can-ep5-btn" class="btn-common"> MÁY CÁN ÉP 5 </a>
-                        <a id="may-can-ep6-btn" class="btn-common"> MÁY CÁN ÉP 6 </a>
-                        <a id="may-ep-banh-btn" class="btn-common"> MÁY ÉP BÁNH </a>
-                        <a id="may-can-banh-btn" class="btn-common"> MÁY CÁN BÁNH </a>
-                        <a id="he-thong-tron-btn" class="btn-common"> HỆ THỐNG TRỘN </a>
-                        <a id="nuong-danh-dong-btn" class="btn-common"> NƯƠNG ĐÁNH ĐÔNG </a>
-                        <a id="bom-nuoc-rua-mu-btn" class="btn-common"> BƠM NƯỚC RỬA MỦ </a>
-                        <a id="bang-tai-btn" class="btn-common"> ĐỘNG CƠ BĂNG TẢI </a>
-                        <!-- <a id="he-thong-dieu-khien-btn" class="btn-common1"> HỆ THỐNG ĐIỀU KHIỂN</a> -->
-                        <!-- <img src="electric-motor.png" class="bom" alt=""> -->
-                        <p id="den-buong-say-btn" class="btn-den"></p>
-                        <p id="den-san-rung-btn" class="btn-den"></p>
-                        <p id="den-may-can-keo-btn" class="btn_den"></p>
-                        <p id="den-may-can-cat-btn" class="btn_den"></p>
-                        <p id="den-may-can-ep-btn" class="btn_den"></p>
-                        <p id="den-bom-tron-btn" class="btn_den"></p>
-                    </div>
+    <ul class="navbar">
+        <li class="listTab active"><a class="aNav" data-toggle="tab" href="#home">HOME</a></li>
+        <li class="listTab"><a class="aNav" data-toggle="tab" href="#menu1">BƠM CỐM </a></li>
+        <li class="listTab"><a class="aNav" data-toggle="tab" href="#menu2">MÁY CÁN CẮT</a></li>
+        <li class="listTab"><a class="aNav" data-toggle="tab" href="#menu3">MÁY CÁN KÉO</a></li>
+        <li class="listTab"><a class="aNav" data-toggle="tab" href="#menu4">HỆ THỐNG SẤY</a></li>
+        <li class="listTab"><a class="aNav" data-toggle="tab" href="#menu5">BUỒNG TRỘN</a></li>
+        <li class="listTab"><a class="aNav" data-toggle="tab" href="#menu6">MÁY CÂN BÁNH</a></li>
+        <li class="listTab"><a class="aNav" data-toggle="tab" href="#menu6">MÁY CÁN ÉP</a></li>
+    </ul>
+
+
+    <!-- Tab content -->
+    <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+
+            <div class="container">
+                <h1 class="title">
+                    HỆ THỐNG ĐIỀU KHIỂN VÀ GIÁM SÁT DÂY CHUYỀN SẢN XUẤT MỦ CAO SU
+                </h1>
+                <div class="background">
+                    <!-- <button  onclick="Test()" >abc</button> -->
+                    <!-- <a id="san-rung-btn" class="btn-common">SÀN RUNG</a> -->
+                    <!-- <a id="buong-say-btn" class="btn-common"> BUỒNG SẤY </a> -->
+                    <!-- <a id="bom-com-btn" class="btn-common"> BƠM CỐM </a> -->
+                    <!-- <a id="may-can-cat-btn" class="btn-common"> MÁY CÁN CẮT </a> -->
+                    <!-- <a id="may-can-keo-btn" class="btn-common"> MÁY CÁN KÉO </a> -->
+                    <button class="bomcom" onclick="BOMCOM()">BƠM CỐM </button>
+                    <button class="maycancat" onclick="maycancat()"> MÁY CÁN CẮT </button>
+                    <button class="maycankeo" onclick="maycankeo()"> MÁY CÁN KÉO</button>
+                    <button class="hethongtron" onclick="hethongtron()"> HỆ THỐNG TRỘN</button>
+                    <button class="buongsay" onclick="buongsay()"> BUỒNG SẤY</button>
+                    <button class="maycanbanh" onclick="maycanbanh()"> MÁY CÂN BÁNH </button>
+                    <button class="maycanep1" onclick="maycanep()"> MÁY CÁN ÉP 1</button>
+                    <button class="maycanep2" onclick="maycanep()"> MÁY CÁN ÉP 2 </button>
+                    <button class="maycanep3" onclick="maycanep()"> MÁY CÁN ÉP 3 </button>
+                    <button class="maycanep4" onclick="maycanep()"> MÁY CÁN ÉP 4 </button>
+                    <button class="maycanep5" onclick="maycanep()"> MÁY CÁN ÉP 5 </button>
+                    <button class="maycanep6" onclick="maycanep()"> MÁY CÁN ÉP 6 </button>
+                    <!-- <a id="may-can-ep2-btn" class="btn-common"> MÁY CÁN ÉP 2 </a>
+                    <a id="may-can-ep3-btn" class="btn-common"> MÁY CÁN ÉP 3 </a>
+                    <a id="may-can-ep4-btn" class="btn-common"> MÁY CÁN ÉP 4 </a>
+                    <a id="may-can-ep5-btn" class="btn-common"> MÁY CÁN ÉP 5 </a>
+                    <a id="may-can-ep6-btn" class="btn-common"> MÁY CÁN ÉP 6 </a> -->
+                    <!-- <a id="may-ep-banh-btn" class="btn-common"> MÁY ÉP BÁNH </a> -->
+                    <!-- <a id="may-can-banh-btn" class="btn-common"> MÁY CÁN BÁNH </a> -->
+                    <!-- <a id="he-thong-tron-btn" class="btn-common"> HỆ THỐNG TRỘN </a> -->
+                    <!-- <a id="nuong-danh-dong-btn" class="btn-common"> NƯƠNG ĐÁNH ĐÔNG </a>
+                    <a id="bom-nuoc-rua-mu-btn" class="btn-common"> BƠM NƯỚC RỬA MỦ </a>
+                    <a id="bang-tai-btn" class="btn-common"> ĐỘNG CƠ BĂNG TẢI </a> -->
+                    <!-- <a id="he-thong-dieu-khien-btn" class="btn-common1"> HỆ THỐNG ĐIỀU KHIỂN</a> -->
+                    <!-- <img src="electric-motor.png" class="bom" alt=""> -->
+                    <!-- <p id="den-buong-say-btn" class="btn-den"></p>
+                    <p id="den-san-rung-btn" class="btn-den"></p>
+                    <p id="den-may-can-keo-btn" class="btn_den"></p>
+                    <p id="den-may-can-cat-btn" class="btn_den"></p>
+                    <p id="den-may-can-ep-btn" class="btn_den"></p>
+                    <p id="den-bom-tron-btn" class="btn_den"></p> -->
                 </div>
-        
             </div>
-            <div id="menu1" class="tab-pane fade">
-             
-                <div id="tank">
-                    <div id="tieu-de">
-                        Chào mừng các bạn đến với WebServer S7-1200
+        </div>
+        <div id="menu1" class="tab-pane fade">
+
+            <div id="tieu-de">
+                BƠM CỐM
+            </div>
+            <div id="maubang">
+                <div class="chuabang1">
+                    <table id="bang1">
+                        <caption class="title_table"> THÔNG SỐ GIÁM SÁT ĐỘNG CƠ </caption>
+                        <tr>
+                            <th><label>TẦN SỐ</label></th>
+                            <th><label id="Data1"> 0.0</label></th>
+                        </tr>
+                        <tr>
+                            <th><label>DÒNG ĐIỆN</label></th>
+                            <th><label id="Data2"> 0.0</label></th>
+                        </tr>
+                        <tr>
+                            <th><label>ĐIỆN ÁP</label></th>
+                            <th><label id="Data3"> 0.0</label></th>
+                        </tr>
+                        <tr>
+                            <th><label>CÔNG SUẤT</label></th>
+                            <th><label id="Data4"> 0.0</label></th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="chuabang2">
+                    <table id="bang1">
+                        <caption class="title_table"> CÀI THÔNG SỐ HOẠT ĐỘNG CHO ĐỘNG CƠ </caption> <br>
+                        <tr>
+                            <th><label>CÔNG SUẤT ĐỘNG CƠ</label></th>
+                            <th><label id="Data10"> 0.0</label></th>
+                        </tr>
+                        <tr>
+                            <th><label>DÒNG ĐIỆN KHÔNG TẢI</label></th>
+                            <th><label id="Data11"> 0.0</label></th>
+                        </tr>
+                        <tr>
+                            <th><label>ĐIỆN ÁP ĐỊNH MỨC</label></th>
+                            <th><label id="Data12"> 0.0</label></th>
+
+                        </tr>
+                        <tr>
+                            <th><label>TẦN SỐ ĐỊNH MỨC</label></th>
+                            <th><label id="Data13"> 0.0</label></th>
+                        </tr>
+                        <tr>
+                            <th><label>DÒNG ĐIỆN KHI KHÔNG TẢI</label></th>
+                            <th><label id="Data14"> 0.0</label></th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="chuabang3">
+                    <table id="bang1">
+                        <caption class="title_table"> THÔNG SỐ CÀI ĐẶT BIẾN TẦN </caption> <br>
+                        <tr>
+                            <th><label>THỜI GIAN TĂNG TỐC</label></th>
+                            <th><label id="Data15"> 0.0</label></th>
+                        </tr>
+                        <tr>
+                            <th><label>THỜI GIAN GIẢM TỐC</label></th>
+                            <th><label id="Data16"> 0.0</label></th>
+
+                        </tr>
+                        <tr>
+                            <th><label>NHẬP TẦN SỐ</label></th>
+                            <th><label id="Data17"> 0.0</label></th>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <svg id="SVG_Start" height="100" width="100">
+                        <circle id="cir_start" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
+                        <text fill="#000000" font-size="10" font-family="Verdana" x="38" y="55">Start</text>
+                    </svg>
+
+                    <svg id="SVG_Stop" height="100" width="100">
+                        <circle id="cir_stop" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
+                        <text fill="#000000" font-size="10" font-family="Verdana" x="38" y="55">Stop</text>
+                    </svg>
+                    <svg id="SVG_Memory" height="100" width="100">
+                        <circle id="cir_memory" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
+                        <text fill="#000000" font-size="10" font-family="Verdana" x="32" y="55">M200.0</text>
+                    </svg>
+
+                    <!-- <svg id="SVG_Output" height="100" width="100">
+                        <circle id="cir_output" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
+                        <text fill="#000000" font-size="10" font-family="Verdana" x="38" y="55">Q0.1</text>
+                    </svg> -->
+                </div>
+                <div id="Btn_Bool">
+                    <button id="Btn_Start">Start</button>
+                    <button id="Btn_Stop">Stop</button>
+                    <button id="Btn_Memory">M200.0</button>
+                    <!-- <button id="Btn_Output">Q0.1</button> -->
+                </div>
+                <div id="data">
+                    <ul>
+                        <!-- <li><label id="Data1">Data 1: 0</label></li>
+                        <li><label id="Data2">Data 2: 0.0</label></li>
+                        <li><label id="Data3">Data 3: 0</label></li>
+                        <li><label id="Data4">Data 4: 0</label></li> -->
+                        <li><label>Data 5: </label><input type="text" id="Data5"
+                                placeholder="Nhập vào số nguyên"><button id="Btn_Data5">OK</button></li>
+                        <li><label>Data 6: </label><input type="text" id="Data6" placeholder="Nhập vào số thực"><button
+                                id="Btn_Data6">OK</button></li>
+                        <li><label>Data 7: </label><input type="text" id="Data7"
+                                placeholder="Nhập vào số nguyên"><button id="Btn_Data7">OK</button></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- <div id="menu2" class="tab-pane fade">
+
+            <div id="tank">
+                <div id="tieu-de">
+                    MÁY CÁN CẮT
+                </div>
+                <div>
+                    <svg id="SVG_Start" height="100" width="100">
+                        <circle id="cir_start" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
+                        <text fill="#000000" font-size="10" font-family="Verdana" x="38" y="55">Start</text>
+                    </svg>
+
+                    <svg id="SVG_Stop" height="100" width="100">
+                        <circle id="cir_stop" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
+                        <text fill="#000000" font-size="10" font-family="Verdana" x="38" y="55">Stop</text>
+                    </svg>
+                    <svg id="SVG_Memory" height="100" width="100">
+                        <circle id="cir_memory" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
+                        <text fill="#000000" font-size="10" font-family="Verdana" x="32" y="55">M200.0</text>
+                    </svg>
+
+                    <svg id="SVG_Output" height="100" width="100">
+                        <circle id="cir_output" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
+                        <text fill="#000000" font-size="10" font-family="Verdana" x="38" y="55">Q0.1</text>
+                    </svg>
+                </div>
+                <div id="Btn_Bool">
+                    <button id="Btn_Start">Start</button>
+                    <button id="Btn_Stop">Stop</button>
+                    <button id="Btn_Memory">M200.0</button>
+                    <button id="Btn_Output">Q0.1</button>
+                </div>
+                <div id="data">
+                    <ul>
+                        <li><label id="Data1">Data 1: 0</label></li>
+                        <li><label id="Data2">Data 2: 0.0</label></li>
+                        <li><label id="Data3">Data 3: 0</label></li>
+                        <li><label>Data 4: </label><input type="text" id="Data4"
+                                placeholder="Nhập vào số nguyên"><button id="Btn_Data4">OK</button></li>
+                        <li><label>Data 5: </label><input type="text" id="Data5" placeholder="Nhập vào số thực"><button
+                                id="Btn_Data5">OK</button></li>
+                        <li><label>Data 6: </label><input type="text" id="Data6"
+                                placeholder="Nhập vào số nguyên"><button id="Btn_Data6">OK</button></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div> -->
+        <!-- <div id="menu2" class="tab-pane fade">
+
+            <div id="tank">
+                <div id="tieu-de">
+                    Chào mừng các bạn đến với WebServer S7-1200
+                </div>
+
+                 <div class="background"> 
+                    <div class="chuabang1">
+                        <table id="bang1">
+                            <caption class="title_table"> THÔNG SỐ GIÁM SÁT ĐỘNG CƠ </caption>
+                            <tr>
+                                <th><label>TẦN SỐ</label></th>
+                                <th><label id="Data1"> 0.0</label></th>
+
+                            </tr>
+                            <tr>
+                                <th><label>DÒNG ĐIỆN</label></th>
+                                <th><label id="Data2"> 0.0</label></th>
+                            </tr>
+                            <tr>
+                                <th><label>ĐIỆN ÁP</label></th>
+                                <th><label id="Data3"> 0.0</label></th>
+
+                            </tr>
+                            <tr>
+                                <th><label>CÔNG SUẤT</label></th>
+                                <th><label id="Data7"> 0.0</label></th>
+                            </tr>
+                        </table>
+
                     </div>
-                    <div>
-                        <svg id="SVG_Start" height="100" width="100">
-                            <circle id="cir_start" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
-                            <text fill="#000000" font-size="10" font-family="Verdana" x="38" y="55">Start</text>
-                        </svg>
-            
-                        <svg id="SVG_Stop" height="100" width="100">
-                            <circle id="cir_stop" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
-                            <text fill="#000000" font-size="10" font-family="Verdana" x="38" y="55">Stop</text>
-                        </svg>
-                        <svg id="SVG_Memory" height="100" width="100">
-                            <circle id="cir_memory" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
-                            <text fill="#000000" font-size="10" font-family="Verdana" x="32" y="55">M200.0</text>
-                        </svg>
-            
-                        <svg id="SVG_Output" height="100" width="100">
-                            <circle id="cir_output" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
-                            <text fill="#000000" font-size="10" font-family="Verdana" x="38" y="55">Q0.1</text>
-                        </svg>
+                    <br>
+                    <div class="chuabang2">
+                        <table id="bang1">
+                            <caption class="title_table"> CÀI THÔNG SỐ HOẠT ĐỘNG CHO ĐỘNG CƠ </caption> <br>
+                            <tr>
+                                <th><label>CÔNG SUẤT ĐỘNG CƠ</label></th>
+                                <th><label id="Data10"> 0.0</label></th>
+
+                            </tr>
+                            <tr>
+                                <th><label>DÒNG ĐIỆN KHÔNG TẢI</label></th>
+                                <th><label id="Data11"> 0.0</label></th>
+                            </tr>
+                            <tr>
+                                <th><label>ĐIỆN ÁP ĐỊNH MỨC</label></th>
+                                <th><label id="Data12"> 0.0</label></th>
+
+                            </tr>
+                            <tr>
+                                <th><label>TẦN SỐ ĐỊNH MỨC</label></th>
+                                <th><label id="Data13"> 0.0</label></th>
+                            </tr>
+                            <tr>
+                                <th><label>DÒNG ĐIỆN KHI KHÔNG TẢI</label></th>
+                                <th><label id="Data14"> 0.0</label></th>
+                            </tr>
+                        </table>
                     </div>
+                    <br>
+                    <div class="chuabang3">
+                        <table id="bang1">
+                            <caption class="title_table"> THÔNG SỐ CÀI ĐẶT BIẾN TẦN </caption> <br>
+                            <tr>
+                                <th><label>THỜI GIAN TĂNG TỐC</label></th>
+                                <th><label id="Data15"> 0.0</label></th>
+                            </tr>
+                            <tr>
+                                <th><label>THỜI GIAN GIẢM TỐC</label></th>
+                                <th><label id="Data16"> 0.0</label></th>
+
+                            </tr>
+                            <tr>
+                                <th><label>NHẬP TẦN SỐ</label></th>
+                                <th><label id="Data17"> 0.0</label></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+
+
+                    <svg id="SVG_Start" height="100" width="100">
+
+                        <circle id="cir_start" cx="50" cy="50" r="30" stroke="black" stroke-width="3" fill="red" />
+
+                        <text fill="#000000" font-size="10" font-family="verdana" x="38" y="55">Start</text>
+                    </svg>
+                    <svg id="SVG_Stop" height="100" width="100">
+
+                        <circle id="cir_stop" cx="50" cy="50" r="30" stroke="black" stroke-width="3" fill="red" />
+
+                        <text fill="#000000" font-size="10" font-family="verdana" x="38" y="55">Stop</text>
+                    </svg>
+                    <svg id="SVG_Memory" height="100" width="100">
+
+                        <circle id="cir_Memory" cx="50" cy="50" r="30" stroke="black" stroke-width="3" fill="red" />
+
+                        <text fill="#000000" font-size="10" font-family="verdana" x="30" y="55">M200.0</text>
+                    </svg>
+                    <svg id="SVG_Output" height="100" width="100">
+
+                        <circle id="cir_output" cx="50" cy="50" r="30" stroke="black" stroke-width="3" fill="red" />
+
+                        <text fill="#000000" font-size="10" font-family="verdana" x="38" y="55">Q0.1</text>
+                    </svg>
                     <div id="Btn_Bool">
-                        <button id="Btn_Start">Start</button>
-                        <button id="Btn_Stop">Stop</button>
-                        <button id="Btn_Memory">M200.0</button>
-                        <button id="Btn_Output">Q0.1</button>
+                        <button id="btn_Start">Start</button>
+                        <button id="btn_Start">Stop</button>
+                        <button id="btn_Start">M200.0</button>
+                        <button id="btn_Start">Q0.1</button>
                     </div>
+                    <br>
                     <div id="data">
                         <ul>
                             <li><label id="Data1">Data 1: 0</label></li>
                             <li><label id="Data2">Data 2: 0.0</label></li>
                             <li><label id="Data3">Data 3: 0</label></li>
-                            <li><label>Data 4: </label><input type="text" id="Data4" placeholder="Nhập vào số nguyên"><button
-                                    id="Btn_Data4">OK</button></li>
-                            <li><label>Data 5: </label><input type="text" id="Data5" placeholder="Nhập vào số thực"><button
-                                    id="Btn_Data5">OK</button></li>
-                            <li><label>Data 6: </label><input type="text" id="Data6" placeholder="Nhập vào số nguyên"><button
-                                    id="Btn_Data6">OK</button></li>
+                            <li><Data>Data 4":</label><input type="text" id="Data4"
+                                        placeholder="Nhập vào số nguyên"><Button id="Btn_Data4">OK</Button></li>
+                            <li><label>Data 5:</label><input type="text" id="Data5"
+                                    placeholder="Nhập vào số nguyên"><Button id="Btn_Data5">OK</Button></li>
+                            <li><label>Data 6:</label><input type="text" id="Data6"
+                                    placeholder="Nhập vào số nguyên"><Button id="Btn_Data6">OK</Button></li>
                         </ul>
                     </div>
                 </div>
-    
             </div>
-           
-          </div>
-    
-
-        <!-- Home page -->
-       
- 
-
-    
-
-   
-
-
+        </div> -->
+    </div>
+    <!-- Home page -->
 </body>
+<script type="text/javascript" src="123.js"></script>
 
 </html>

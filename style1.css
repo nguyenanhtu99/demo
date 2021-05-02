@@ -14,6 +14,7 @@
 
 .tab-content{
     position: absolute;
+    background-color: rosybrown;
 }
 
 .navbar{
@@ -229,6 +230,12 @@
 .testcode{
     position: absolute;
     left: 200px;
+    top: 100px; 
+    width: 50px;
+}
+.testcode1{
+    position: absolute;
+    left: 400px;
     top: 100px; 
     width: 50px;
 }
