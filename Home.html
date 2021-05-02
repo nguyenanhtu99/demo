@@ -79,118 +79,112 @@
                 </div>
             </div>
         </div>
-        <div id="menu1" class="tab-pane fade">
+        <div id="menu1" class="tab-pane fade bomcom">
 
             <div id="tieu-de">
                 BƠM CỐM
             </div>
-            <div id="maubang">
-                <div class="chuabang1">
-                    <table id="bang1">
-                        <caption class="title_table"> THÔNG SỐ GIÁM SÁT ĐỘNG CƠ </caption>
-                        <tr>
-                            <th><label>TẦN SỐ</label></th>
-                            <th><label id="Data1"> 0.0</label></th>
-                        </tr>
-                        <tr>
-                            <th><label>DÒNG ĐIỆN</label></th>
-                            <th><label id="Data2"> 0.0</label></th>
-                        </tr>
-                        <tr>
-                            <th><label>ĐIỆN ÁP</label></th>
-                            <th><label id="Data3"> 0.0</label></th>
-                        </tr>
-                        <tr>
-                            <th><label>CÔNG SUẤT</label></th>
-                            <th><label id="Data4"> 0.0</label></th>
-                        </tr>
-                    </table>
+            <div class="bomcom-content">
+                <div class="input">
+                    <div id="Btn_Bool" class="button-content">
+                        <button id="Btn_Start">Start</button>
+                        <button id="Btn_Stop">Stop</button>
+                        <button id="Btn_Memory">M200.0</button>
+                        <!-- <button id="Btn_Output">Q0.1</button> -->
+                    </div>
+                    <div class="led-content">
+                        <svg id="SVG_Start" height="100" width="100">
+                            <circle id="cir_start" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
+                            <text fill="#000000" font-size="10" font-family="Verdana" x="38" y="55">Start</text>
+                        </svg>
+    
+                        <svg id="SVG_Stop" height="100" width="100">
+                            <circle id="cir_stop" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
+                            <text fill="#000000" font-size="10" font-family="Verdana" x="38" y="55">Stop</text>
+                        </svg>
+                        <svg id="SVG_Memory" height="100" width="100">
+                            <circle id="cir_memory" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
+                            <text fill="#000000" font-size="10" font-family="Verdana" x="32" y="55">M200.0</text>
+                        </svg>
+    
+                        <!-- <svg id="SVG_Output" height="100" width="100">
+                            <circle id="cir_output" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
+                            <text fill="#000000" font-size="10" font-family="Verdana" x="38" y="55">Q0.1</text>
+                        </svg> -->
+                    </div>
+                    
                 </div>
-                <div class="chuabang2">
-                    <table id="bang1">
-                        <caption class="title_table"> CÀI THÔNG SỐ HOẠT ĐỘNG CHO ĐỘNG CƠ </caption> <br>
-                        <tr>
-                            <th><label>CÔNG SUẤT ĐỘNG CƠ</label></th>
-                            <th><label id="Data10"> 0.0</label></th>
-                        </tr>
-                        <tr>
-                            <th><label>DÒNG ĐIỆN KHÔNG TẢI</label></th>
-                            <th><label id="Data11"> 0.0</label></th>
-                        </tr>
-                        <tr>
-                            <th><label>ĐIỆN ÁP ĐỊNH MỨC</label></th>
-                            <th><label id="Data12"> 0.0</label></th>
 
-                        </tr>
-                        <tr>
-                            <th><label>TẦN SỐ ĐỊNH MỨC</label></th>
-                            <th><label id="Data13"> 0.0</label></th>
-                        </tr>
-                        <tr>
-                            <th><label>DÒNG ĐIỆN KHI KHÔNG TẢI</label></th>
-                            <th><label id="Data14"> 0.0</label></th>
-                        </tr>
-                    </table>
-                </div>
-                <div class="chuabang3">
-                    <table id="bang1">
-                        <caption class="title_table"> THÔNG SỐ CÀI ĐẶT BIẾN TẦN </caption> <br>
-                        <tr>
-                            <th><label>THỜI GIAN TĂNG TỐC</label></th>
-                            <th><label id="Data15"> 0.0</label></th>
-                        </tr>
-                        <tr>
-                            <th><label>THỜI GIAN GIẢM TỐC</label></th>
-                            <th><label id="Data16"> 0.0</label></th>
-
-                        </tr>
-                        <tr>
-                            <th><label>NHẬP TẦN SỐ</label></th>
-                            <th><label id="Data17"> 0.0</label></th>
-                        </tr>
-                    </table>
-                </div>
-                <div>
-                    <svg id="SVG_Start" height="100" width="100">
-                        <circle id="cir_start" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
-                        <text fill="#000000" font-size="10" font-family="Verdana" x="38" y="55">Start</text>
-                    </svg>
-
-                    <svg id="SVG_Stop" height="100" width="100">
-                        <circle id="cir_stop" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
-                        <text fill="#000000" font-size="10" font-family="Verdana" x="38" y="55">Stop</text>
-                    </svg>
-                    <svg id="SVG_Memory" height="100" width="100">
-                        <circle id="cir_memory" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
-                        <text fill="#000000" font-size="10" font-family="Verdana" x="32" y="55">M200.0</text>
-                    </svg>
-
-                    <!-- <svg id="SVG_Output" height="100" width="100">
-                        <circle id="cir_output" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
-                        <text fill="#000000" font-size="10" font-family="Verdana" x="38" y="55">Q0.1</text>
-                    </svg> -->
-                </div>
-                <div id="Btn_Bool">
-                    <button id="Btn_Start">Start</button>
-                    <button id="Btn_Stop">Stop</button>
-                    <button id="Btn_Memory">M200.0</button>
-                    <!-- <button id="Btn_Output">Q0.1</button> -->
-                </div>
-                <div id="data">
-                    <ul>
-                        <!-- <li><label id="Data1">Data 1: 0</label></li>
-                        <li><label id="Data2">Data 2: 0.0</label></li>
-                        <li><label id="Data3">Data 3: 0</label></li>
-                        <li><label id="Data4">Data 4: 0</label></li> -->
-                        <li><label>Data 5: </label><input type="text" id="Data5"
-                                placeholder="Nhập vào số nguyên"><button id="Btn_Data5">OK</button></li>
-                        <li><label>Data 6: </label><input type="text" id="Data6" placeholder="Nhập vào số thực"><button
-                                id="Btn_Data6">OK</button></li>
-                        <li><label>Data 7: </label><input type="text" id="Data7"
-                                placeholder="Nhập vào số nguyên"><button id="Btn_Data7">OK</button></li>
-                    </ul>
+                <div id="maubang" class="table-content">
+                    <div class="chuabang1">
+                        <table id="bang1">
+                            <caption class="title_table"> THÔNG SỐ GIÁM SÁT ĐỘNG CƠ </caption>
+                            <tr>
+                                <th><label>TẦN SỐ</label></th>
+                                <th><label id="Data1"> 0.0</label></th>
+                            </tr>
+                            <tr>
+                                <th><label>DÒNG ĐIỆN</label></th>
+                                <th><label id="Data2"> 0.0</label></th>
+                            </tr>
+                            <tr>
+                                <th><label>ĐIỆN ÁP</label></th>
+                                <th><label id="Data3"> 0.0</label></th>
+                            </tr>
+                            <tr>
+                                <th><label>CÔNG SUẤT</label></th>
+                                <th><label id="Data4"> 0.0</label></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="chuabang2">
+                        <table id="bang1">
+                            <caption class="title_table"> CÀI THÔNG SỐ HOẠT ĐỘNG CHO ĐỘNG CƠ </caption> <br>
+                            <tr>
+                                <th><label>CÔNG SUẤT ĐỘNG CƠ</label></th>
+                                <th><label id="Data10"> 0.0</label></th>
+                            </tr>
+                            <tr>
+                                <th><label>DÒNG ĐIỆN KHÔNG TẢI</label></th>
+                                <th><label id="Data11"> 0.0</label></th>
+                            </tr>
+                            <tr>
+                                <th><label>ĐIỆN ÁP ĐỊNH MỨC</label></th>
+                                <th><label id="Data12"> 0.0</label></th>
+    
+                            </tr>
+                            <tr>
+                                <th><label>TẦN SỐ ĐỊNH MỨC</label></th>
+                                <th><label id="Data13"> 0.0</label></th>
+                            </tr>
+                            <tr>
+                                <th><label>DÒNG ĐIỆN KHI KHÔNG TẢI</label></th>
+                                <th><label id="Data14"> 0.0</label></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="chuabang3">
+                        <table id="bang1">
+                            <caption class="title_table"> THÔNG SỐ CÀI ĐẶT BIẾN TẦN </caption> <br>
+                            <tr>
+                                <th><label>THỜI GIAN TĂNG TỐC</label></th>
+                                <th><label id="Data15"> 0.0</label></th>
+                            </tr>
+                            <tr>
+                                <th><label>THỜI GIAN GIẢM TỐC</label></th>
+                                <th><label id="Data16"> 0.0</label></th>
+    
+                            </tr>
+                            <tr>
+                                <th><label>NHẬP TẦN SỐ</label></th>
+                                <th><label id="Data17"> 0.0</label></th>
+                            </tr>
+                        </table>
+                    </div>
+                    
                 </div>
             </div>
+            
 
 
         </div>
